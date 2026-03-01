@@ -1,0 +1,14 @@
+{
+  "name": "hospital-management-system",
+  "version": "2.0.0",
+  "description": "Full-stack MERN Hospital Management System with Google Auth, Payments & Services",
+  "scripts": {
+    "install-all": "cd backend && npm install && cd ../frontend && npm install",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev",
+    "seed": "cd backend && npm run seed",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "dev": "start cmd /c \"cd backend && npm run dev\" && start cmd /c \"cd frontend && npm run dev\""
+  }
+}
