@@ -1,4 +1,4 @@
-# 🏥 MedCare - Hospital Management System
+# Mediflix+ - Hospital Management System
 
 A full-stack **MERN** (MongoDB, Express.js, React.js, Node.js) Hospital Management System with a modern, responsive UI.
 
