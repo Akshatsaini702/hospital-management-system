@@ -21,6 +21,10 @@ app.use(cors({
   origin: function (origin, callback) {
     // Allow requests with no origin (mobile apps, curl, etc.)
     if (!origin) return callback(null, true);
+    // If FRONTEND_URL is not set yet, allow all .vercel.app origins
+    if (allowedOrigins.length <= 1 && origin.endsWith('.vercel.app')) {
+      return callback(null, true);
+    }
     if (allowedOrigins.some(o => origin.startsWith(o))) {
       return callback(null, true);
     }
